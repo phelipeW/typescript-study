@@ -1,4 +1,8 @@
 class NegociacoesView {
+  private _elemento = Element;
+  constructor(seletor: string){
+    this._elemento = document.querySelector(seletor)
+  }
   template(): string {
     return `
     <table class="table table-hover table-bordered">
